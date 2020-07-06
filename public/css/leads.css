@@ -1,13 +1,35 @@
+body {
+    background-color: var(--color3);
+}
+
 .results {
     width: 70%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     font-size: 1.5rem;
+    grid-gap: 1em;
 }
+
+/* .results div {
+    min-height: 40px;
+} */
 
 .controll{
     display: none;
+    width: 50%;
+    margin: 10px auto;
+}
+#msg {
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -24,6 +46,11 @@
     cursor: pointer;
 
     
+}
+
+
+.gridHeading {
+    font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 

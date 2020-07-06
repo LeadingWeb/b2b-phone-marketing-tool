@@ -1,0 +1,68 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+
+    height: 100vh;
+}
+h1 {
+    color: var(--color3);
+    position: relative;
+    
+
+    background-color: var(--color4);
+}
+
+p {
+    text-align: center;
+    color: var(--color2);
+}
+
+
+
+.query {
+    position: relative;
+    top: 9%;
+    height: 40vh;
+
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* background-color: var(--color1); */
+
+}
+
+
+
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    top: 2%;
+    color: var(--color5);
+
+}
+
+input {
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-weight: 300;
+    width: 70%;
+}
+
+button {
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+button:hover{
+    color: var(--color4)
+}

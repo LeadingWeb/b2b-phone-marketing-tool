@@ -1,0 +1,11 @@
+.results {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    font-size: 1.5rem;
+}
+
+.controll{
+    display: none;
+}

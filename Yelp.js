@@ -70,6 +70,7 @@ class Yelp {
                 if(this.last < this.current) {
                     
                     setTimeout(()=> {
+                        this.searchTerm.offset += this.searchTerm.limit;
                         this.search();
                         if(this.last == this.current) {
                             console.log(`FINISH!! FOUND ${this.leads.length} LEADS !`);

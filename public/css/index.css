@@ -1,0 +1,42 @@
+.wrapper {
+    height: 99vh;
+    
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    width: 99vw;
+    top: 0;
+    
+}
+
+.text {
+    background-color: var(--color5al);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text h1 {
+    color: var(--color1);
+}
+
+.text p {
+    color: var(--color1);
+    text-align: center;
+}
+
+.text button {
+
+    margin: 0 auto;
+
+}

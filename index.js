@@ -1,5 +1,9 @@
 const Yelp = require('./Yelp');
-const yelp = new Yelp();
+let yelp = new Yelp();
+const Scrap = require('./Scrap');
+const scrap = new Scrap();
+scrap.start();
+
 
 //Express
 const express = require('express');
@@ -33,3 +37,20 @@ app.get('/leads', (req, res) => {
     res.render('leads');
 })
 
+app.post('/findmail', (req, res) => {
+    console.log(req.body);
+    const name = req.body.name;
+    console.log(name);
+    scrap.findMailOf(name)
+    .then(mails => {
+        console.log(mails, 'MAILS INDEX');
+        res.json(mails);
+    })
+
+})
+
+app.get('/reset', (req, res) => {
+    yelp = null;
+    yelp = new Yelp();
+    res.json({status: 1});
+})

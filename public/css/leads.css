@@ -1,0 +1,65 @@
+body {
+    background-color: var(--color3);
+}
+
+.results {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    font-size: 1.5rem;
+    grid-gap: 1em;
+}
+
+/* .results div {
+    min-height: 40px;
+} */
+
+.controll{
+    display: none;
+    width: 50%;
+    margin: 10px auto;
+}
+#msg {
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.pageNav {
+    display: none;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pageNav > div > p {
+    font-size: 3rem;
+    cursor: pointer;
+
+    
+}
+
+
+.gridHeading {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

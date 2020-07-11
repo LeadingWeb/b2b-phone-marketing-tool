@@ -1,6 +1,6 @@
 
 const yelp = require('yelp-fusion');
-const apiKey = 'E_d2ceyeDMwnU5DixVr36U4CEqqJF7aT4qU27laQHzJsqLFlj79KRmMea1TdkRdZ6HnTNJJcpsE2ed5d9CE3Cj6UcVwRplu9suy98nNRPCAxUpqW07BhwVpXNfHfXnYx';
+const apiKey = <YOURAPIKEY>;
 
 class Yelp {
     
